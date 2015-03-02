@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <% if @contact_form.errors.any? %>
+        <div id="error_explanation">
+          <div class="alert alert-danger">
+            The form contains <%= pluralize(@contact_form.errors.count, "error") %>.
+          </div>
+          <ul>
+          <% @contact_form.errors.full_messages.each do |msg| %>
+            <li class="field_with_errors"><%= msg %></li>
+          <% end %>
+          </ul>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
