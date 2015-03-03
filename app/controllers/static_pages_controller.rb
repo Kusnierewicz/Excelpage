@@ -8,13 +8,14 @@ class StaticPagesController < ApplicationController
     @contact_form.attributes = contact_form_params
     
     if @contact_form.save
+      flash[:success] = "Wiadomość wysłana pomyślnie!"
       redirect_to action: :home
+      
     else
+      flash[:danger] = "There is something wrong with your inputs!!"
       render :home
     end
-    
-    #return redirect_to action: :home if @contact_form.save
-    #render :home
+
   end
 
   private
