@@ -12,7 +12,7 @@ class StaticPagesController < ApplicationController
       redirect_to action: :home
       
     else
-      flash[:danger] = "There is something wrong with your inputs!!"
+      flash[:danger] = "Coś poszło nie tak, sprawdź wpisane dane kontaktowe!"
       render :home
     end
 
