@@ -21,9 +21,9 @@
                     <li>
                         <a class="page-scroll" href="#oferta">Oferta</a>
                     </li>
-                    <li>
+                    <!--<li>
                         <a class="page-scroll" href="#about">Portfolio</a>
-                    </li>
+                    </li>-->
                     <li>
                         <a class="page-scroll" href="#team">Team</a>
                     </li>
@@ -69,34 +69,31 @@
             </div>
             <div class="row text-center">
                 <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">Pakiet MS Office</h4>
-                    <p class="text-muted">Aplikacje MS Office znamy jak własną kieszeń, powiedź z czym masz problem. Nie ważne czy chodzi o automatycze przekazywanie maila, sprawdzenie funkcji w Excel'u, czy konstrukcję animacji w PowerPoint'cie</p>
+                    <div class="timeline-image">
+                       <%= image_tag("oferta/1.png", :class => "img-circle img-responsive center-block", :alt => "") %>
+                    </div>        
+                    <h4 class="service-heading">Znamy pakiet MS Office</h4>
+                    <p class="text-muted">Powiedź z czym masz problem. Nie ważne czy chodzi o przekazywanie maila, sprawdzenie funkcji w Excel'u, czy konstrukcję animacji w PowerPoint'cie. Office nie ma dla nas tajemnic.</p>
                 </div>
                 <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">Makra w języku VBA</h4>
-                    <p class="text-muted">Pomożemy ci wykorzystać w pełni wszystkie możliwości pakietu MS Office. Generowanie raportu za pomocą jednego kliknięcia, czy automatyczne wysyłanie maili do klientów lub kontrahentów. To żaden problem.</p>
+                     <div class="timeline-image">
+                       <%= image_tag("oferta/2.png", :class => "img-circle img-responsive center-block", :alt => "") %>
+                    </div>  
+                    <h4 class="service-heading">Piszemy makra w języku VBA</h4>
+                    <p class="text-muted">Pomożemy ci zautomatyzować pracę. Generowanie raportu za pomocą jednego kliknięcia, obróbka danych za pomocą tabeli przestawnej, czy wysyłanie wiadomości do zdefiniowanej listy adresatów. To żaden problem.</p>
                 </div>
                 <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">Poprawiamy, naprawiamy</h4>
-                    <p class="text-muted">Jeżeli korzystasz z makra które przestało działać, albo chciałbyś je poprawić, podpowiemy jak to zrobić z istniejącym już kodem. Jeżeli temat jest pilny, jesteśmy zawsze gotowi.</p>
+                     <div class="timeline-image">
+                       <%= image_tag("oferta/3.png", :class => "img-circle img-responsive center-block", :alt => "") %>
+                    </div>  
+                    <h4 class="service-heading">Naprawiamy stary kod</h4>
+                    <p class="text-muted">Jeżeli korzystasz z makra które przestało działać, albo chciałbyś je poprawić, podpowiemy co i jak, przygotujemy nową wersję. Jeżeli temat jest pilny, jesteśmy zawsze gotowi.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About Section 
     <section id="about" class="bg-light-gray">
         <div class="container">
             <div class="row">
@@ -110,7 +107,7 @@
                     <ul class="timeline">
                         <li> 
                             <div class="timeline-image">
-                                <!--<img class="img-circle img-responsive" src="img/about/1.jpg" alt="">-->
+                                
                                  <%= image_tag("about/1.jpg", :class => "img-circle img-responsive", :alt => "") %>
                             </div>
                             <div class="timeline-panel">
@@ -125,7 +122,7 @@
                         </li>
                         <li class="timeline-inverted">
                             <div class="timeline-image">
-                                <!--<img class="img-circle img-responsive" src="img/about/2.jpg" alt="">-->
+                                
                                  <%= image_tag("about/2.jpg", :class => "img-circle img-responsive", :alt => "") %>
                             </div>
                             <div class="timeline-panel">
@@ -140,7 +137,7 @@
                         </li>
                         <li>
                             <div class="timeline-image">
-                                <!--<img class="img-circle img-responsive" src="img/about/3.jpg" alt="">-->
+                                
                                  <%= image_tag("about/3.jpg", :class => "img-circle img-responsive", :alt => "") %>
                             </div>
                             <div class="timeline-panel">
@@ -155,7 +152,7 @@
                         </li>
                         <li class="timeline-inverted">
                             <div class="timeline-image">
-                                <!--<img class="img-circle img-responsive" src="img/about/4.jpg" alt="">-->
+                                
                                  <%= image_tag("about/4.jpg", :class => "img-circle img-responsive", :alt => "") %>
                             </div>
                             <div class="timeline-panel">
@@ -179,10 +176,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
 
     <!-- Team Section -->
-    <section id="team" >
+    <section id="team" class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -242,43 +239,43 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p class="large text-muted">Doświadczenie które nabyliśmy w domu mediowym sprawiło, że problemy każdego klienta są nam bliskie. Możesz nam zaufać.</p>
+                    <p class="large text-muted">Na codzień optymalizujemy pracę w jednym z warszawskich domów mediowych. Doświadczenie które nabyliśmy sprawiło, że problemy każdego klienta są nam bliskie. Możesz nam zaufać.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Clients Aside -->
+    <!-- Clients Aside 
     <aside class="clients" >
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-sm-6">
                     <a href="#">
-                        <!--<img src="img/logos/envato.jpg" class="img-responsive img-centered" alt="">-->
+                        
                         <%= image_tag("logos/envato.jpg", :class => "img-responsive img-circle", :alt => "") %>
                     </a>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <a href="#">
-                        <!--<img src="img/logos/designmodo.jpg" class="img-responsive img-centered" alt="">-->
+                        
                         <%= image_tag("logos/designmodo.jpg", :class => "img-responsive img-circle", :alt => "") %>
                     </a>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <a href="#">
-                        <!--<img src="img/logos/themeforest.jpg" class="img-responsive img-centered" alt="">-->
+                        
                         <%= image_tag("logos/themeforest.jpg", :class => "img-responsive img-circle", :alt => "") %>
                     </a>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <a href="#">
-                        <!--<img src="img/logos/creative-market.jpg" class="img-responsive img-centered" alt="">-->
+                        
                         <%= image_tag("logos/creative-market.jpg", :class => "img-responsive img-circle", :alt => "") %>
                     </a>
                 </div>
             </div>
         </div>
-    </aside>
+    </aside>-->
 
     <section id="contact">
         <div class="container">
@@ -327,7 +324,7 @@
                     <div class="clearfix"></div>
                     <div class="col-lg-12 text-center">
                         <div class="actions">
-                          <%= f.submit "Send Message", :class => 'btn btn-xl'%>
+                          <%= f.submit "Gotowe!", :class => 'btn btn-xl'%>
                         </div>
                     </div>
                     </div>
