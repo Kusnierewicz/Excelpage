@@ -27,4 +27,3 @@ class StaticPagesController < ApplicationController
     params.require(:contact_form).permit(:name, :email, :phone, :message)
   end
 end
-      
